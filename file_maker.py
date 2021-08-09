@@ -6,7 +6,9 @@ def create_file(filename):
     f = open(filename, "w")
 
 if len(sys.argv) > 1 and sys.argv[1] != None :
-    filename = sys.argv[1]
+    list_name = sys.argv[1:]
+    filename = '_'.join(list_name)
+
     create_file(filename)
 else:
     filename = input('Enter the name of the file-----')
