@@ -44,4 +44,4 @@ def Longest_Substring_with_Same_Letters_after_Replacement(str1,k):
 
 print(Longest_Substring_with_Same_Letters_after_Replacement("aabccbb", 2))
 print(Longest_Substring_with_Same_Letters_after_Replacement("abbcb", 1))
-print(Longest_Substring_with_Same_Letters_after_Replacement("abcdddddddddddddsssssssssssccccccccsdsdaawdawdasdasdxcadyyyyyyerrererdgsgdvzxcdbbbnnmjjsdsdyuxcxchxcnnnnnnjjcde", 12))
+print(Longest_Substring_with_Same_Letters_after_Replacement("aaacaa", 2))
