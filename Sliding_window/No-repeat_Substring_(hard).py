@@ -26,7 +26,7 @@ def No_repeat_Substring(string):
     max_till_Now = 0
     dictionary = {}
     for i in range(len(string)):
-        print(i,start_pointer,max_till_Now,dictionary)
+
         if string[i] not in dictionary:
             dictionary[string[i]] = 0
         else:
@@ -36,4 +36,7 @@ def No_repeat_Substring(string):
             dictionary[string[i]] = 0
     return max_till_Now
 
-print(No_repeat_Substring('abccde'))
+
+print("Length of the longest substring: " + str(No_repeat_Substring("aabccbb")))
+print("Length of the longest substring: " + str(No_repeat_Substring("abbbb")))
+print("Length of the longest substring: " + str(No_repeat_Substring("abccde")))
