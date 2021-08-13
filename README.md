@@ -15,9 +15,9 @@ Similarly, we will also cover Dynamic Programming, Backtracking, Recursion, Gree
    - No-repeat Substring (hard) *
    - Longest Substring with Same Letters after Replacement (hard)
    - Longest Subarray with Ones after Replacement (hard) *
-   -  Problem Challenge 1 - Permutation in a String (hard) *
-  - Problem Challenge 2 - String Anagrams (hard)
-  -     Problem Challenge 3 - Smallest Window containing Substring (hard) *
-  -  Problem Challenge 4 - Words Concatenation (hard)
+   - Problem Challenge 1 - Permutation in a String (hard) *
+   - Problem Challenge 2 - String Anagrams (hard)
+   - Problem Challenge 3 - Smallest Window containing Substring (hard) *
+   - Problem Challenge 4 - Words Concatenation (hard)
 
 
