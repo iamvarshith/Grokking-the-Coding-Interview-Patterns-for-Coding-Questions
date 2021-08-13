@@ -1,8 +1,4 @@
-thisdict =	{
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-thisdict["year"] += 1
-thisdict.clear()
-print(len(thisdict))
+string1 = "Python3,Flask-Microframework,Jinja2,Flask_WTF,Flask_Login,Flask_Admin,WTForms,requests,Flask_SQLAlchemy,Flask,pycryptodomex"
+
+
+print(string1.replace(' ', ''))
