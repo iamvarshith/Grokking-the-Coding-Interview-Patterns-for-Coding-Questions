@@ -5,7 +5,7 @@ Similarly, we will also cover Dynamic Programming, Backtracking, Recursion, Gree
 ------------
 
 # Detailed Explanation in my blog please check.
-## [iamvarshith.dev](http://iamvarshith.dev "iamvarshith.dev") 
+# [iamvarshith.dev](http://iamvarshith.dev "iamvarshith.dev") 
 
 ------------
 
