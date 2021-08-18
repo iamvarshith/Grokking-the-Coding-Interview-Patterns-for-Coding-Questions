@@ -22,5 +22,19 @@ Similarly, we will also cover Dynamic Programming, Backtracking, Recursion, Gree
    - Problem Challenge 2 - String Anagrams (hard)
    - Problem Challenge 3 - Smallest Window containing Substring (hard) *
    - Problem Challenge 4 - Words Concatenation (hard)
+2. [Two Pointer](https://github.com/iamvarshith/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions/tree/master/Two_Pointer "Two pointer")
+    
+  -  Pair with Target Sum (easy)
+  -  Remove Duplicates (easy)
+  -  Squaring a Sorted Array (easy)
+  -  Triplet Sum to Zero (medium)
+  -  Triplet Sum Close to Target (medium)
+  -  Triplets with Smaller Sum (medium)
+  -  Subarrays with Product Less than a Target (medium) *
+  -  Problem Challenge 1 - Quadruple Sum to Target (medium) *
+  -  Problem Challenge 2 - Comparing Strings containing Backspaces (medium)
+  -  Problem Challenge 3 - Minimum Window Sort (medium) *
+
+	
 
 
