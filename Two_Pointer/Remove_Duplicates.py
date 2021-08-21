@@ -38,4 +38,8 @@ def remove_duplicates(arr):
         if arr[non_duplicate - 1] != arr[pointer]:
             arr[non_duplicate] = arr[pointer]
             non_duplicate += 1
+        pointer += 1
     return non_duplicate
+
+print(remove_duplicates([2, 3, 3, 3, 6, 9, 9]))
+print(remove_duplicates([2, 2, 2, 11]))
