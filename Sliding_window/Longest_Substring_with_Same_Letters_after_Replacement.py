@@ -22,9 +22,7 @@ Output: 3
 Explanation: Replace the 'b' or 'd' with 'c' to have the longest repeating substring "ccc"."""
 
 
-
-
-def Longest_Substring_with_Same_Letters_after_Replacement(str1,k):
+def Longest_Substring_with_Same_Letters_after_Replacement(str1, k):
     window_start = 0
     max_length = 0
     maxRepeatLetterCount = 0
@@ -34,13 +32,14 @@ def Longest_Substring_with_Same_Letters_after_Replacement(str1,k):
         if str1[window_end] not in dictionary:
             dictionary[str1[window_end]] = 0
         dictionary[str1[window_end]] += 1
-        maxRepeatLetterCount = max(maxRepeatLetterCount,dictionary[str1[window_end]])
+        maxRepeatLetterCount = max(maxRepeatLetterCount, dictionary[str1[window_end]])
 
-        if (window_end-window_start+1-maxRepeatLetterCount)> k:
+        if (window_end - window_start + 1 - maxRepeatLetterCount) > k:
             dictionary[str1[window_start]] -= 1
             window_start += 1
-        max_length= max(max_length,window_end-window_start+1)
+        max_length = max(max_length, window_end - window_start + 1)
     return max_length
+
 
 print(Longest_Substring_with_Same_Letters_after_Replacement("aabccbb", 2))
 print(Longest_Substring_with_Same_Letters_after_Replacement("abbcb", 1))

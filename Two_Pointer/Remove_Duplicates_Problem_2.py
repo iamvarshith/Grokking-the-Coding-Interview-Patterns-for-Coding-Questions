@@ -19,9 +19,9 @@ Explanation: The first two elements after removing every 'Key' will be [11, 1].
 def remove_duplicates_given(arr, key):
     key_element = 0
 
-    for index in range(len(arr)):
-        if arr[index] != key:
-            arr[key_element] = arr[index]
+    for i in range(len(arr)):
+        if arr[i] != key:
+            arr[key_element] = arr[i]
             key_element += 1
     return key_element
 
