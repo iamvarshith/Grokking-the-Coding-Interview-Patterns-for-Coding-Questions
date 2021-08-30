@@ -49,6 +49,6 @@ def Longest_Substring_with_K_Distinct_Characters(string, k):
 
 
 string = "araaci"
-k = 2
+k = 3
 
 print(Longest_Substring_with_K_Distinct_Characters(string, k))

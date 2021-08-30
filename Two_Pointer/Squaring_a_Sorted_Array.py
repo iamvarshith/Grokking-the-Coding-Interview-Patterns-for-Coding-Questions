@@ -22,8 +22,8 @@ def square_elemnts(arr):
     square_index = len(arr) - 1
     right_pointer = len(arr) - 1
     while left_pointer <= right_pointer:
-        squareleft = left_pointer * left_pointer
-        squareright = right_pointer * right_pointer
+        squareleft = arr[left_pointer] * arr[left_pointer]
+        squareright = arr[right_pointer] * arr[right_pointer]
         if squareleft > squareright:
             result_arr[square_index] = squareleft
             left_pointer += 1
