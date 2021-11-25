@@ -1,17 +1,26 @@
-array = [2, 3, 3, 3, 6, 9, 9]
+def getUniqueLargeNumber(string, pattern):
+    answer = ''
+    if pattern[-1] == "#":
 
-temp = 0
-count = 0
-for i in range(len(array)):
-    if temp == array[i]:
-        array[i] = 0
-        print(array)
-        continue
+        for i in range(len(string) - len(pattern) + 1):
+
+            if string[i:i + len(pattern) - 1] == pattern[:-1]:
+                answer = answer + str(i + 1)
+
+
 
     else:
-        count += 1
-    temp = array[i]
+        for i in range(len(string) - len(pattern) + 1):
+            if string[i:i + len(pattern)] == pattern:
+                answer = answer + str(i + 1)
 
 
-print(count)
-print(array)
+
+    if len(answer) > 0:
+        return int(answer)
+    else:
+        return 0
+
+
+print(getUniqueLargeNumber('abcdabghabd', 'abssdsdsd#'))
+# print(getUniqueLargeNumber("abcdefabc", "abc"))
