@@ -27,11 +27,14 @@ def inorder(root):
         print(root.data, end=" ")
         inorder(root.right)
 
+
 def preorder(root):
     if root:
-        print(root.data,end = " ")
+        print(root.data, end=" ")
         preorder(root.left)
         preorder(root.right)
+
+
 if __name__ == "__main__":
     r = Node(20)
     insert(r, 8)
