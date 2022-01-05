@@ -34,10 +34,19 @@ def triplet_closest_sum(array: list, target: int):
         left = i+1
         right = len(array)-1
         while left < right:
-            target_diffence  = target - array[i] + array[left] + array[right]
+            target_diffence  = target - array[i] - array[left] - array[right]
             if target_diffence == 0:
                 return target - target_diffence
+            if abs(target_diffence) < abs(smallest_diffrence) or (
+                    abs(target_diffence) == abs(smallest_diffrence) and target_diffence > smallest_diffrence):
+                smallest_diffrence = target_diffence  # save the closest and the biggest difference
+            if target_diffence > 0:
+                left += 1  # we need a triplet with a bigger sum
+            else:
+                right -= 1  # we need a triplet with a smaller sum
+    return target - smallest_diffrence
 
-
-
-
+if __name__ == "__main__":
+    print(triplet_closest_sum([-2, 0, 1, 2], 2))
+    print(triplet_closest_sum([-3, -1, 1, 2], 1))
+    print(triplet_closest_sum([1, 0, 1, 1], 100))
