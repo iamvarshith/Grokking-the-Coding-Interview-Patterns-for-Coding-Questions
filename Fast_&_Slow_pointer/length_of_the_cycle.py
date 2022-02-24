@@ -15,7 +15,7 @@ def detect_cycle_item(linked_list):
         fast_pointer = fast_pointer.next.next
         slow_pointer = slow_pointer.next
         if slow_pointer == fast_pointer:
-            return length_linked_list(slow_pointer)
+            return slow_pointer
     return "No cycle in this"
 
 
