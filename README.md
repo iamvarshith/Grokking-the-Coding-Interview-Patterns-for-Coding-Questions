@@ -23,17 +23,24 @@ Similarly, we will also cover Dynamic Programming, Backtracking, Recursion, Gree
    - Problem Challenge 4 - Words Concatenation (hard)
 2. [Two Pointer](https://github.com/iamvarshith/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions/tree/master/Two_Pointer "Two pointer")
     
-  -  Pair with Target Sum (easy)
-  -  Remove Duplicates (easy)
-  -  Squaring a Sorted Array (easy)
-  -  Triplet Sum to Zero (medium)
-  -  Triplet Sum Close to Target (medium)
-  -  Triplets with Smaller Sum (medium)
-  -  Subarrays with Product Less than a Target (medium) *
-  -  Problem Challenge 1 - Quadruple Sum to Target (medium) *
-  -  Problem Challenge 2 - Comparing Strings containing Backspaces (medium)
-  -  Problem Challenge 3 - Minimum Window Sort (medium) *
+   - Pair with Target Sum (easy)
+   - Remove Duplicates (easy)
+   - Squaring a Sorted Array (easy)
+   - Triplet Sum to Zero (medium)
+   - Triplet Sum Close to Target (medium)
+   - Triplets with Smaller Sum (medium)
+   - Subarrays with Product Less than a Target (medium) *
+   - Problem Challenge 1 - Quadruple Sum to Target (medium) *
+   - Problem Challenge 2 - Comparing Strings containing Backspaces (medium)
+   - Problem Challenge 3 - Minimum Window Sort (medium) *
+3. [Fast & Slow pointer](https://github.com/iamvarshith/Grokking-the-Coding-Interview-Patterns-for-Coding-Questions/tree/master/Fast_%26_Slow_pointer)
 
-	
+   - LinkedList Cycle (easy)
+   - Start of LinkedList Cycle (medium)
+   - Happy Number (medium)
+   - Middle of the LinkedList (easy)
+   - Problem Challenge 1
+   - Problem Challenge 2
+   - Problem Challenge 3
 
 
