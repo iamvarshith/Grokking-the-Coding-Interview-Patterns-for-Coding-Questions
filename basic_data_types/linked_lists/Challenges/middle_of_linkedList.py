@@ -1,5 +1,14 @@
 from basic_data_types.linked_lists.single_linked_lists import LinkedList
 
+"""Statement
+Given the head of a singly linked list, return the middle node of the linked list.
+
+If there are two middle nodes, return the second middle node. 
+This happens when the length of the list is even 1/2(length) + 1,  
+and the second middle node occurs at Otherwise, if the length of the list is odd, 
+the middle node occurs at 1/2(length) th position 
+"""
+
 
 def find_middle_element(head):
     if head and head.head.next:
