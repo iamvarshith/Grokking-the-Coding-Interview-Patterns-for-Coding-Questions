@@ -86,11 +86,12 @@ class LinkedList:
         return deleted
 
 
-new_list = LinkedList()
-new_list.insert_at_tail('40')
-new_list.insert_at_tail('60')
-new_list.insert_at_tail('30')
-new_list.insert_at_head('690')
-new_list.search_element('30')
-new_list.delete_node_by_value("690")
-new_list.print_linkedlist()
+if __name__ == "__main__":
+    new_list = LinkedList()
+    new_list.insert_at_tail('40')
+    new_list.insert_at_tail('60')
+    new_list.insert_at_tail('30')
+    new_list.insert_at_head('690')
+    new_list.search_element('30')
+    new_list.delete_node_by_value("690")
+    new_list.print_linkedlist()
