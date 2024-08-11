@@ -15,7 +15,7 @@ If we know the length of the LinkedList cycle, we can find the start of the cycl
 
 """
 
-from basic_data_types.linked_list import Linkedlist
+from basic_data_types.linked_lists.linked_list import Linkedlist
 from length_of_the_cycle import detect_cycle_item
 
 

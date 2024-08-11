@@ -21,7 +21,7 @@ Input: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> null
 Output: 4
 
 """
-from basic_data_types.linked_list import Linkedlist
+from basic_data_types.linked_lists.linked_list import Linkedlist
 
 
 def middle_linked_list(linked_list):

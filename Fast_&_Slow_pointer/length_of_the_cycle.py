@@ -1,4 +1,4 @@
-from basic_data_types.linked_list import Linkedlist
+from basic_data_types.linked_lists.linked_list import Linkedlist
 """
 Problem 1: Given the head of a LinkedList with a cycle, find the length of the cycle.
 

@@ -1,31 +1,70 @@
-from single_linked_lists import LinkedList, Node
-
-
-class MultipleNode(Node):
+class Node:
     def __init__(self, data):
-        super().__init__(data)
-        self.previous = None
+        self.data = data
+        self.next_element = None
+        self.previous_element = None
 
 
-class DoubleLinkedList(LinkedList):
-    def print_linkedlist(self):
-        print("From new fun")
-        current = self.head
-        while current:
-            print(current.previous,current.data, current.next)
-            current = current.next
+class DoublyLinkedList:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.length = 0
 
+    def get_head(self):
+        if (self.head != None):
+            return self.head.data
+        else:
+            return False
 
+    def is_empty(self):
+        if (self.head is None):  # Check whether the head is None
+            return True
+        else:
+            return False
 
+    def insert_tail(self, element):
+        temp_node = Node(element)
+        if (self.is_empty()):
+            self.head = temp_node
+            self.tail = temp_node
+        else:
+            self.tail.next_element = temp_node
+            temp_node.previous_element = self.tail
+            self.tail = temp_node
+        self.length += 1
+        return temp_node.data
 
+    def remove_head(self):
+        if (self.is_empty()):
+            return False
+        nodeToRemove = self.head;
+        if (self.length == 1):
+            self.head = None
+            self.tail = None
+        else:
+            self.head = nodeToRemove.next_element
+            self.head.previous_element = None
+            nodeToRemove.next_element = None
+        self.length -= 1
+        return nodeToRemove.data
 
+    def get_tail(self):
+        if (self.head != None):
+            return self.tail.data
+        else:
+            return False
 
-if __name__ == "__main__":
-    new_list = DoubleLinkedList()
-    new_list.insert_at_tail('40')
-    new_list.insert_at_tail('60')
-    new_list.insert_at_tail('30')
-    new_list.insert_at_head('690')
-    new_list.search_element('30')
-    new_list.delete_node_by_value("690")
-    new_list.print_linkedlist()
+    def __str__(self):
+        val = ""
+        if (self.is_empty()):
+            return ""
+        temp = self.head
+        val = "[" + str(temp.data) + ", "
+        temp = temp.next_element
+
+        while (temp.next_element):
+            val = val + str(temp.data) + ", "
+            temp = temp.next_element
+        val = val + str(temp.data) + "]"
+        return val

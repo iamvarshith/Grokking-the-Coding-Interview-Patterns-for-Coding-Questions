@@ -5,7 +5,7 @@ Given the head of a Singly LinkedList, write a function to determine if the Link
 
 """
 
-from basic_data_types.linked_list import Linkedlist
+from basic_data_types.linked_lists.linked_list import Linkedlist
 """
 Solution#
 
